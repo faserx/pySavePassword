@@ -40,7 +40,7 @@ def encrypt(key,text):
       outFile = open(filename,"a")
     else:
       outFile = open(filename,"wb")
-    outFile.write(enc+"\n")
+    outFile.write((enc+"\n").encode("UTF-8"))
     outFile.close()
     
   except Exception as e:
