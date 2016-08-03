@@ -85,12 +85,12 @@ def decryptLine(text, key):
   
 def usage():
   print(bcolors.BOLD+"Usage:\n"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -(c/d) -p 'password' (-s site*)\n"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -(c/d) -p 'password' (-s site*)\n"+bcolors.ENDC)
   print(bcolors.BOLD+"\t\t-c -> crypt\n\t\t-d -> decrypt\n"+bcolors.ENDC)
   print(bcolors.BOLD+"Example:\n"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -c -p 'password'\n\t**for crypt content**"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -d -p 'password'\n\t**for all content**\n"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -d -p 'password' -s 'http://www.google.it'\n\t**for you username and password from google.it**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -c -p 'password'\n\t**for crypt content**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -d -p 'password'\n\t**for all content**\n"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -d -p 'password' -s 'http://www.google.it'\n\t**for you username and password from google.it**"+bcolors.ENDC)
   
 if(len(sys.argv) < 4):
   usage()
