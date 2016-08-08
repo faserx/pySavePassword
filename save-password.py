@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-#  secure-password.py
+#  save-password.py
 #  
 #  Copyright 2016 Piero Aiello <piero.aiello@protonmail.com>
 #  
@@ -185,13 +185,13 @@ def deleteAll():
 
 def usage():
   print(bcolors.BOLD+"Usage:\n"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -(c/d) -p 'password' (-s site*)\n"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -(c/d) -p 'password' (-s site*)\n"+bcolors.ENDC)
   print(bcolors.BOLD+"\t\t-c -> crypt\n\t\t-d -> decrypt\n\t\t-del -> delete"+bcolors.ENDC)
   print(bcolors.BOLD+"Example:\n"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -c -p 'password'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to crypt content**"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -d -p 'password'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to  decrypt lall content**"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -d -p 'password' -s 'http://www.google.it'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to decrypt you username and password from google.it**"+bcolors.ENDC)
-  print(bcolors.BOLD+"\tsecure-password.py -del -p 'password' -s 'http://www.google.it'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to delete you username and password from google.it**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -c -p 'password'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to crypt content**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -d -p 'password'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to  decrypt lall content**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -d -p 'password' -s 'http://www.google.it'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to decrypt you username and password from google.it**"+bcolors.ENDC)
+  print(bcolors.BOLD+"\tsave-password.py -del -p 'password' -s 'http://www.google.it'"+bcolors.ENDC+bcolors.WARNING+"\n\t**to delete you username and password from google.it**"+bcolors.ENDC)
   
 if(sys.argv[1] == '-delete-all'):
   deleteAll()
