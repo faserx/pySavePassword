@@ -154,7 +154,7 @@ def decryptLine(text, key):
 def deleteForSite(site, key):
   item = list()
   found = False
-  filename = "test.lock"
+  filename = "safe.lock"
   if(os.stat(filename).st_size > 0):
     inFile = open(filename,"r")
     while True:
