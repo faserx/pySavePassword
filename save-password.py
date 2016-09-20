@@ -70,7 +70,7 @@ def encrypt(key,text):
   key  = generateSecureKey(key)
   
   try:
-    filename = "test.lock"
+    filename = "safe.lock"
     
     iv = Random.new().read(AES.block_size)
     cipher = AES.new(key,AES.MODE_CFB,iv)
@@ -92,7 +92,7 @@ def encrypt(key,text):
   
 def decrypt(key, search):
   found = False;
-  filename = "test.lock"
+  filename = "safe.lock"
   if(os.stat(filename).st_size > 0):
     inFile = open(filename,"r")
     while True:
@@ -119,7 +119,7 @@ def decrypt(key, search):
         
 def decryptAll(key):
   found = False;
-  filename = "test.lock"
+  filename = "safe.lock"
   if(os.stat(filename).st_size > 0):
     inFile = open(filename,"r")
     while True:
@@ -179,7 +179,7 @@ def deleteForSite(site, key):
     print(bcolors.FAIL+"Impossibile eliminare le credenziali: Nessuna credenziale salvata!"+bcolors.ENDC)
 
 def deleteAll():
-  infile = open("test.lock", "w")
+  infile = open("safe.lock", "w")
   infile.close();
   print(bcolors.WARNING,"Tutte le credenziali sono state eliminate con successo!",bcolors.ENDC)
 
