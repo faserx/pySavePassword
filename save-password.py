@@ -53,7 +53,7 @@ def encryptAll(key,text):
   key  = generateSecureKey(key)
   
   try:
-    filename = "test.lock"
+    filename = "safe.lock"
     
     outFile = open(filename,"w")
     
